@@ -57,11 +57,10 @@ footer{
     height: 4rem;     
 }
 
-video{
-height: 40rem;
-margin: 6rem;
-   
-}
+#V{
+   visibility: hidden;
+   }
+
 footer,h2{
  text-align: center;
 
