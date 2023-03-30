@@ -1,6 +1,22 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
 body{
     background-color: rgba(255, 4, 4, 0.041);
 }
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
 .corpo {
     width: 100%;
     height: 100%;
