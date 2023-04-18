@@ -2,21 +2,32 @@
 <head>
 	<meta charset="utf-8" />
 	<title>UNIALFA - Grade</title>
-	<link rel="stylesheet" href="/Academico/Grade.css">
+	<style>
+		body {
+			background-image: linear-gradient(to right, brown -100%, white);
+		}
+		table {
+			border-collapse: collapse;
+		}
+		table, th, td {
+			border: 1px solid black;
+			padding: 10px;
+		}
+		th{
+			background-color: brown;
+			color: white;
+		}
+	</style>
 </head>
 <body>
-    <img src="/img/Logo_UNIALFA.png" alt="Logo_UNIALFA">
-	<img src="/img/Logo_FADISP.png" alt="Logo_FADISP" />
+	<img src="img/Logo_UNIALFA.png" alt="logo-unialfa" height="50"/>
 	<h2 style="text-align:center">Grade Curricular Sugerida</h2><br>
-	<div class="tabela">
-	<table >
-		<div class="cabeçalho">
+	<table align=right>
 		<tr>
 			<th colspan="3">Sistemas de Informação</th>
 		</tr>
 		<tr>
 			<th colspan="2">Matérias</th>
-		</div>
 			<th scope="col">horas</th>
 		</tr>
 		<tr>
@@ -260,6 +271,5 @@
 			<td>360</th>
 		</tr>
 	</table>
-</div>
 </body>
 </html>
