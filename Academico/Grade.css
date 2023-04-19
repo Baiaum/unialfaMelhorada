@@ -1,0 +1,19 @@
+
+body {
+    
+    background-image: linear-gradient(to right, brown -235%, white);
+}
+.tabela {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+th{
+    background-color: #CC0000;
+    color: white;
+}
+.cabeçalho{
+padding: 100px;
+}
