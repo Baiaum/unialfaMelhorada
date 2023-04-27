@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <?php
+        include "./php/config.php"
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +14,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous">
     </script>
-
-        <link rel="stylesheet" href="./stylePagInicial.css">
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./stylePagInicial.css">
    
 </head>
 <body>
@@ -76,9 +80,10 @@
                     </ul>
                 </div>
                 <div class="d-flex flex-column d-inline-block ">
-                    <p class="decricao-aluno mb-0">Eduardo Ribero Arruda</p>
-                    <p class="decricao-aluno mb-0">20221243052 | <a class="butao-sair" href="index.html">Sair</a></p>
-                    <p class="decricao-aluno mb-0">V.22.10.28</p>
+                    <p class="descricao-aluno-nome mb-0"></p>
+                    <p class="descricao-aluno-matricula mb-0">20221243052 | <a class="butao-sair" href="index.html">Sair</a></p>
+                    <p class="descricao-aluno mb-0">V.22.10.28</p>
+                    
                 </div>
             </div>
         </nav>
