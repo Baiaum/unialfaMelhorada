@@ -15,6 +15,7 @@
         crossorigin="anonymous">
     </script>
     <script src="./js/jquery-3.6.4.js"></script>
+    
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./stylePagInicial.css">
    
@@ -39,7 +40,6 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Administrativo
                                 </a>
-
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Auto Atendimento</a></li>
                                     <li><a class="dropdown-item" href="#">Aiversos</a></li>
@@ -53,7 +53,6 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Acadêmico
                                 </a>
-
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Diário</a></li>
                                     <li><a class="dropdown-item" href="#">Diário-Boletim</a></li>
@@ -83,7 +82,15 @@
                     <p class="descricao-aluno-nome mb-0"></p>
                     <p class="descricao-aluno-matricula mb-0">20221243052 | <a class="butao-sair" href="index.html">Sair</a></p>
                     <p class="descricao-aluno mb-0">V.22.10.28</p>
-                    
+                    <script>
+                        $(document).ready(function(){
+                            
+                          //  alert("DEu bom primeira parte")
+                            $.post("./php/getCurrentUser.php", {}, function(data){
+                               // alert("USUÁRIO ATUAL:" + data);
+                            })
+                        })
+                    </script>
                 </div>
             </div>
         </nav>
