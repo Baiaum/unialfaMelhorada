@@ -1,6 +1,18 @@
 <?php
-  include 'config.php';
-  include 'setCurrentUser.php';
+  session_start();
+  include "./config.php";
+
   
-  echo $_COOKIE[$cookieName];
+  
+  $user = $_SESSION['user'];
+  $sql = "SELECT * FROM alunos WHERE login='$user'";
+  $result = mysqli_query($con, $sql);
+  if(!$result){
+    echo 3;
+  }
+  while($row = $result->fetch_assoc()){
+      echo $row['nome'];
+    }
+
+
 ?>

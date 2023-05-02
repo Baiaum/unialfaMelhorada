@@ -1,8 +1,13 @@
+<?php
+        session_start();
+        if(!isset($_SESSION['user'])){
+            echo "<script>window.location.href = './php/error_login.php'</script>";
+        };
+        include "./php/config.php"
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
-    <?php
-        include "./php/config.php"
-    ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,10 +89,8 @@
                     <p class="descricao-aluno mb-0">V.22.10.28</p>
                     <script>
                         $(document).ready(function(){
-                            
-                          //  alert("DEu bom primeira parte")
                             $.post("./php/getCurrentUser.php", {}, function(data){
-                               // alert("USUÁRIO ATUAL:" + data);
+                               $(".descricao-aluno-nome").html(data);
                             })
                         })
                     </script>

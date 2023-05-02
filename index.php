@@ -1,8 +1,11 @@
-<!DOCTYPE html>
 <?php
-    include "./php/config.php";
-
+    session_start();
+    if(isset($_SESSION['user'])){
+        session_unset();
+        session_destroy();
+    }
 ?>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -33,32 +36,34 @@
             <button id="access"> Acessar </button>
             <script>
                 $(document).ready(function(){
-                    $("#access").click(function(){
-                        var user = $("#username").val();
-                        var password = $("#password").val();
+                    function login(){   
+                        let user = $("#username").val();
+                        let password = $("#password").val();
                         //alert("user: " + user + " password: " + password);
                         $.post("./php/login.php", {user: user, password: password}, function(data){ 
                             if(data == 2){
                                 btn = $('<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>');
-                                error = $("<div/>").addClass("alert alert-warning container-fluid d-flex align-items-center alert-dismissible fade show").html("Campo não preenchido!");
+                                error = $("<div/>").addClass("alert alert-warning container-fluid d-flex align-items-center alert-dismissible fade show sumir").html("Campo não preenchido!");
                                 error.append(btn);
                                 $("#password_error").append(error);
+                                $(".alert").fadeTo(5000, 0, null, function(){
+                                    this.remove();
+                                });
                             } else if(data == 1){
-                                var user = $("#username").val();
-                                $.post("./php/setCurrentUser.php", {user: user}, function(user){
-                                   // alert("USUÁRIO ATUAL: " + user);
-                                    
-                                    
-                                })
-                                window.location.href = "./PagInicial.php";
-                                
+                                window.location.href = "./PagInicial.php";   
                             } else {
                                 btn = $('<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>');
-                                error = $("<div/>").addClass("alert alert-danger container-fluid d-flex align-items-center alert-dismissible fade show").html("Senha inválida / Usuário inválido");
+                                error = $("<div/>").addClass("alert alert-danger container-fluid d-flex align-items-center alert-dismissible fade show sumir").html("Senha inválida / Usuário inválido");
                                 error.append(btn);
                                 $("#password_error").append(error);
+                                $(".alert").fadeTo(5000, 0, null, function(){
+                                    this.remove();
+                                });
                             }
-                        });             
+                        }); 
+                    }
+                    $("#access").click(function(){  
+                        login();          
                     })
                 })
             </script>
