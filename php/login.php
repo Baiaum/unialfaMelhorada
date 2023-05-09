@@ -2,6 +2,7 @@
  include "config.php";
  session_start();
 
+
  $user = $_POST['user'];
  $password = $_POST['password'];
 

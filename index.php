@@ -50,6 +50,7 @@
                                     this.remove();
                                 });
                             } else if(data == 1){
+                                
                                 window.location.href = "./PagInicial.php";   
                             } else {
                                 btn = $('<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>');
@@ -63,7 +64,7 @@
                         }); 
                     }
                     $("#access").click(function(){  
-                        login();          
+                        login();       
                     })
                 })
             </script>

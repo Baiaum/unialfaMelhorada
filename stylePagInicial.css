@@ -1,12 +1,9 @@
 body{
-         background-color: rgba(255, 255, 255, 0.993);
-         
-    
+         background-color: rgba(170, 66, 66, 0.993);
 }
 p {
     font-family: monospace;
 }
-
 
 .left{
     width: 380px; 
@@ -15,31 +12,22 @@ p {
     float: left;
 }
 .atalhos{
-    margin-top: 7px;
-    border:solid 1px;
-    display: flex;
-    flex-direction: column;
+    color:rgb(0, 0, 0);
 }
-.atalhos>a{
-    font-size: 15px; 
-    color: aliceblue;
-    text-decoration: none;
-    text-transform: bold;
-    margin-left: 4px;
-}
+
 
 .titulo{
     font-size: 30px; 
     text-align: center; 
-    color: aliceblue;
+
 }
 .avisos{
    margin-top: 7px;
     border:solid 1px;
     
 }
-.avisos>p{
-    color: aliceblue;
+.avisos{
+
     margin-left: 4px;
 }
 .videoMoti{
@@ -48,13 +36,13 @@ p {
 }
 .cursando{
     float: left;   
-}
+}q
 .tituloCursando{
     color: rgb(0, 0, 0);
     margin-left: 1rem;
 }
 
-.cursando>li{
+.cursando{
    
     border-radius: 5px;
     background-color: rgb(255, 26, 26);
@@ -62,5 +50,9 @@ p {
     width: 200%;
     margin-left: 1rem;
     
+}
+
+a{
+    color:black;
 }
 
