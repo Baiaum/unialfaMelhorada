@@ -18,50 +18,15 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous">
         </script>
-        <script src="./js/jquery-3.6.4.js"></script>
-        <script src="./js/script.js"></script>
-        
-         <link rel="stylesheet" href="./css/stylePagInicial.css">
+        <script src="/unialfa/js/jquery-3.6.4.js"></script>
+        <script src="/unialfa/js/scripts.js"></script>
+        <link rel="stylesheet" href="./css/stylePagInicial.css">
     </head>
     <body>
         <header>
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img class="logo" src="img/Logo_UNIALFA.png" alt="Logo_UNIALFA">
-                            <img class="logo" src="img/Logo_FADISP.png" alt="Logo_FADISP">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toToggle" aria-expanded="false" aria-controls="collapseExample">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse nav-pills-mute" id="toToggle">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Eu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link primary" aria-current="page" href="#">Estou</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Testando</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">o menu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">que se</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">colapsa</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
-
+            <div id="navPlaceHolder">
+            </div>
         </header>
-
             <main>
                 <div class="container-fluid">
                     <div class="row">
